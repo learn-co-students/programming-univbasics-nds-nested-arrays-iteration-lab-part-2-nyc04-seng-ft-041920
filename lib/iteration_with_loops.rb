@@ -1,5 +1,24 @@
 def find_min_in_nested_arrays(src)
-  # src will be an array of arrays of integers
-  # Produce a new Array that contains the smallest number of each of the nested arrays
+  low_temp = []
+  row = 0
+  
+  
+while row < src.count do
+  temp = 999
+  element = 0
+ while element < src[row].count do
+   
+  if temp > src[row][element]
+    temp = src[row][element]
+    
+    
+    
+  end
 
+element += 1
+ end
+ low_temp << temp
+ row += 1
+ end
+ low_temp
 end
